@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css">
+    <title>Chocolate Purchasing</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="title">Chocolate Purchasing</div>
+      <div class="products">
+        <div class="product" data-name="Dark Chocolate" data-price="80">
+          <img
+            src="https://health.clevelandclinic.org/wp-content/uploads/sites/3/2022/03/darkChocolate-463813283-770x533-1-650x428.jpg"
+            alt="Dark Chocolate"
+          />
+          <h3>Dark Chocolate</h3>
+          <p>₹80</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Milk Chocolate" data-price="45">
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Milka_Alpine_Milk_Chocolate_bar_100g_with_chunks_broken_off.jpg/1200px-Milka_Alpine_Milk_Chocolate_bar_100g_with_chunks_broken_off.jpg"
+            alt="Milk Chocolate"
+          />
+          <h3>Milk Chocolate</h3>
+          <p>₹45</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="White Chocolate" data-price="70">
+          <img
+            src="https://www.southernliving.com/thmb/KIy3qemaYmI2jm_b9xPUOOfAEYM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-1172689579-1-cdacd65ab57d43fd8a7539f689bbf9c7.jpg"
+            alt="White Chocolate"
+          />
+          <h3>White Chocolate</h3>
+          <p>₹70</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+        <div class="product" data-name="Fruit Chocolate" data-price="100">
+          <img
+            src="https://www.agoudalife.com/wp-content/uploads/choc-berry-8.jpg"
+            alt="Fruit Chocolate"
+          />
+          <h3>Fruit Chocolate</h3>
+          <p>₹100</p>
+          <input
+            type="number"
+            min="0"
+            max="8"
+            value="0"
+            onkeydown="return false"
+            onchange="updateSummary()"
+          />
+        </div>
+      </div>
+      <div class="summary">
+        <h2>Your Cart</h2>
+        <ul id="summary-items">
+        </ul>
+        <h3 id="summary-total">Total: ₹0</h3>
+        <button id="summary-button" onclick="placeOrder()">Place Order</button>
+      </div>
+    </div>
+    <script defer src="script.js"></script>
+  </body>
+</html>
